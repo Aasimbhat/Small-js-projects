@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 20px 100px;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+   img{
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+   }
+   p{
+       font-size: 18px;
+       text-align: justify;
+   }
+   .btn{
+       width: 20px;
+       height: 20px;
+       display: inline-block;
+       border: solid grey 2px;
+       border-radius: 50%;
+       cursor: pointer;
+       
+   }
+   #color{
+       text-align: right;
+   }
+   #white{
+
+     background-color: white;
+   }
+   #aqua{
+      background-color: aqua;
+   }
+   #violet{
+     background-color: #ca9aff;
+   }
+   #black{
+       background-color: black;
+
+   }
+</style>
+<body>
+    <div id="color">
+        <span class="btn" id="white" onclick="changeBg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBg('#7fffd4')"></span>
+        <span class="btn" id="voilet" onclick="changeBg('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBg('#000000')"></span>
+    </div>
+    <h1 class="text">ABOUT US </h1>
+    <img src="images/paper.png">
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime eaque. Distinctio eveniet dignissimos blanditiis placeat enim suscipit reiciendis voluptatibus itaque dolorem ipsa, consectetur nesciunt perferendis in impedit unde illum!</p>
+    <script>
+        function changeBg(color){
+            document.body.style.backgroundColor=color;
+            let text=document.getElementsByClassName("text")
+            if(color =="#000000"){
+                for(let elm of txt){
+                    elm.style.color="white"
+                }
+
+            }else {
+                for(let elm of txt){
+                    elm.style.color="black"
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
